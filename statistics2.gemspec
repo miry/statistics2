@@ -8,12 +8,8 @@ Gem::Specification.new do |s|
   s.description = %q{Statistics2 is a module that provides normal, Chi-square, t- and F- probability distributions for Ruby. It is a fork/continuation of Shin-ichiro Hara's original code. It provides a native, compiled extension and a pure Ruby implementation.}
   s.email = ["brendan.ribera@gmail.com", "sinara@blade.nagaokaut.ac.jp"]
 
-  if RUBY_PLATFORM != 'jruby'
-    s.extensions = ["ext/extconf.rb"]
-  end
-
   s.extra_rdoc_files = ["README.rdoc", "History.rdoc"]
-  s.files = Dir["lib/**/*.rb", "ext/**/*.c", "ext/extconf.rb", "examples/**/*.rb"]
+  s.files = Dir["lib/**/*.rb", "examples/**/*.rb"]
   s.homepage = %q{http://github.com/abscondment/statistics2}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib", "ext"]
